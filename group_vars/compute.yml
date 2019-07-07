@@ -5,8 +5,4 @@ slurm_packages:
 
 slurm_role: compute
 
-install_packages:
-  - mpich
-  - openmpi3
-
 monitoring_role: client
