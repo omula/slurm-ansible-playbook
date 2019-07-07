@@ -3,8 +3,8 @@
 slurm_accounting_db_password: "{{ lookup('password', '/tmp/slurmpasswordfile chars=ascii_letters,digits,hexdigits') }}"
 
 slurm_packages:
-  - slurmctld
-  - slurmdbd
+  - slurmctld-ohpc
+  - slurmdbd-ohpc
 
 slurm_role: mgmt
 

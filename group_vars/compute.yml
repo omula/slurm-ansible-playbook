@@ -1,7 +1,7 @@
 ---
 slurm_packages:
-  - slurmd
-  - libpmi
+  - slurmd-ohpc
+  - libpmi-ohpc
 
 slurm_role: compute
 

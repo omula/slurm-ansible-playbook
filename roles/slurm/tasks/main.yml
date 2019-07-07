@@ -1,7 +1,7 @@
 ---
 - name: install munge
   yum:
-    name: munge
+    name: munge-ohpc
     state: installed
 
 - name: copy in munge key
@@ -18,13 +18,10 @@
     enabled: yes
     state: started
 
-- name: Add Slurm COPR repository
-  yum_repository:
-    name: slurm
-    description: Slurm
-    baseurl: https://copr-be.cloud.fedoraproject.org/results/milliams/citc/epel-7-$basearch/
-    gpgcheck: yes
-    gpgkey: https://copr-be.cloud.fedoraproject.org/results/milliams/citc/pubkey.gpg
+# - name: Add OHPC repository
+#   yum:
+#     name: "{{ ohpc_release_rpm_intel }}"
+#     state: present
 
 - name: create slurm group
   group:
