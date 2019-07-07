@@ -27,6 +27,7 @@
     - security-updates
     - ntp
     - 389ds
+    - ohpc
     - users
     - sssd
     - mysql
@@ -50,4 +51,4 @@
     - clustershell
     - packages
     - debug-tools
-    - lmod
+    #- lmod
