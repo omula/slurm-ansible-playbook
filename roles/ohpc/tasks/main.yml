@@ -4,10 +4,15 @@
     name: "{{ epel_release_rpm }}"
     state: present
 
-- name: Enable OpenHPC Intel Arch repository for local use
-  yum:
-    name: "{{ ohpc_release_rpm_intel }}"
-    state: present
+- name: Enable OpenHPC Intel Arch Base repository for local use
+  shell: yum-config-manager --add-repo={{ ohpc_release_base_rpm_intel }}
+  args:
+    creates: /etc/yum.repos.d/OpenHPC:1.3.repo
+
+- name: Enable OpenHPC Intel Arch Update 7 repository for local use
+  shell: yum-config-manager --add-repo={{ ohpc_release_updates_rpm_intel }}
+  args:
+    creates: /etc/yum.repos.d/OpenHPC:1.3:Update7.repo
 
 - name: Lmod
   yum:
