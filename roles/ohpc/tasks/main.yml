@@ -12,7 +12,7 @@
 - name: Enable OpenHPC Intel Arch Update 7 repository for local use
   shell: yum-config-manager --add-repo={{ ohpc_release_updates_rpm_intel }}
   args:
-    creates: /etc/yum.repos.d/OpenHPC:1.3:Update7.repo
+    creates: /etc/yum.repos.d/OpenHPC:1.3:Update8.repo
 
 - name: Lmod
   yum:
