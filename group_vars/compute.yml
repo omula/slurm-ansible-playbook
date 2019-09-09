@@ -5,4 +5,9 @@ slurm_packages:
 
 slurm_role: compute
 
+install_packages:
+  - python36
+  - python36-pip
+  - python36-setuptools
+
 monitoring_role: client

@@ -14,5 +14,6 @@
     - ntp
     - sssd
     - ohpc
+    - packages
     - slurm
     - monitoring
