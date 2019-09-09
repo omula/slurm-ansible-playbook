@@ -25,3 +25,4 @@
   - "{{ ohpc_lmod_mpi_default }}"
   - gnu8-compilers-ohpc.x86_64
   - openmpi3-pmix-slurm-gnu8-ohpc.x86_64
+  - python34-numpy-gnu8-ohpc.x86_64
